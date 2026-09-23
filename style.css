@@ -1,24 +1,24 @@
 .tool-box {
   display: block;
-  background: white;
-  border-radius: 20px; /* ← lit.link っぽい丸さ */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
   padding: 22px 26px;
   margin-bottom: 26px;
   text-decoration: none;
   color: #333;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* ← 柔らかい影 */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  text-align: center; /* ← lit.link 風に中央寄せ */
+  text-align: center;
 }
 
 .tool-box:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); /* ← ふわっと浮く */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .tool-box h2 {
   margin-bottom: 8px;
-  color: #5a6eea; /* lit.link の青系に寄せる */
+  color:
   font-size: 20px;
   font-weight: 600;
 }
