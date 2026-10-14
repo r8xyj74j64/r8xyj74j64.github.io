@@ -3,137 +3,61 @@ body {
     background-color: #ffffff; /* スクショと同じ究極にシンプルな白背景 */
     color: #333333;
     line-height: 1.6;
-    padding: 40px 20px;
+    padding: 60px 20px;
     margin: 0;
 }
 
 .container {
     max-width: 720px;
     margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px 10px; /* 無駄な外枠の影をなくし、スクショのようなフラットな配置に */
+    padding: 0 10px;
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 32px;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 12px;
-    font-weight: 600;
+    margin-bottom: 25px;
+    font-weight: bold;
     color: #333333;
     letter-spacing: -0.5px;
 }
 
 .lead-text {
     text-align: center;
-    color: #666666;
-    font-size: 14px;
-    margin-bottom: 35px;
-}
-
-.form-group {
-    margin-bottom: 25px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 15px;
     color: #333333;
+    font-size: 16px;
+    margin-bottom: 50px;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cccccc; /* スクショのような細くシンプルな境界線 */
-    border-radius: 4px; /* 四角すぎず丸すぎないフラットな角丸 */
-    font-size: 14px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    color: #333333;
-    transition: border-color 0.15s ease-in-out;
-}
-
-input[type="text"]:focus {
-    outline: none;
-    border-color: #318cd7;
-}
-
-textarea {
-    width: 100%;
-    height: 200px;
-    padding: 12px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    font-family: "SFMono-Regular", Consolas, Monaco, monospace;
-    font-size: 13px;
-    line-height: 1.5;
-    box-sizing: border-box;
-    resize: vertical;
-    background-color: #ffffff;
-    color: #333333;
-}
-
-textarea:focus {
-    outline: none;
-    border-color: #318cd7;
-}
-
-/* プレースホルダー（結果がここに表示されます...）の文字色 */
-textarea::placeholder, input::placeholder {
-    color: #999999;
-}
-
-.button-group {
+.product-list {
     display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    flex-direction: column;
+    gap: 35px; /* 各制作物の間の余白 */
 }
 
-.btn {
-    padding: 10px 24px;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.15s ease-in-out;
+.product-item {
+    text-align: left;
 }
 
-/* スクショの「変換する」ボタンの鮮やかな青 */
-.btn-primary {
-    background-color: #318cd7;
-    color: #ffffff;
+/* スクショのリンク特有の美しい紫紺色と下線 */
+.product-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4b118b; 
+    text-decoration: underline;
+    transition: color 0.15s ease-in-out;
 }
 
-.btn-primary:hover {
-    background-color: #2276be;
+.product-title:hover {
+    color: #631fa9;
 }
 
-/* スクショの「クリア」ボタンの鮮やかな赤 */
-.btn-danger {
-    background-color: #e04436;
-    color: #ffffff;
-}
-
-.btn-danger:hover {
-    background-color: #ca3528;
-}
-
-/* スクショの「コピーする」ボタンの鮮やかな緑 */
-.btn-success {
-    background-color: #20c169;
-    color: #ffffff;
-    padding: 10px 20px;
-}
-
-.btn-success:hover {
-    background-color: #1a9e56;
-}
-
-.margin-top-20 {
-    margin-top: 20px;
+/* 説明文のスタイル */
+.product-desc {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 14.5px;
+    color: #333333;
+    line-height: 1.7;
 }
