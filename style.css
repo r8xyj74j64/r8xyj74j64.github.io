@@ -1,37 +1,139 @@
 body {
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #ffffff; /* スクショと同じ究極にシンプルな白背景 */
+    color: #333333;
     line-height: 1.6;
-    padding: 20px;
-}
-.tool-box {
-  display: block;
-  background: white;
-  border-radius: 20px;
-  padding: 22px 26px;
-  margin-bottom: 26px;
-  text-decoration: none;
-  color: #333;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  text-align: center;
+    padding: 40px 20px;
+    margin: 0;
 }
 
-.tool-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 10px; /* 無駄な外枠の影をなくし、スクショのようなフラットな配置に */
 }
 
-.tool-box h2 {
-  margin-bottom: 8px;
-  color:
-  font-size: 20px;
-  font-weight: 600;
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: -0.5px;
 }
 
-.tool-box p {
-  line-height: 1.6;
-  color: #555;
-  font-size: 15px;
+.lead-text {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc; /* スクショのような細くシンプルな境界線 */
+    border-radius: 4px; /* 四角すぎず丸すぎないフラットな角丸 */
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333333;
+    transition: border-color 0.15s ease-in-out;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #318cd7;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #318cd7;
+}
+
+/* プレースホルダー（結果がここに表示されます...）の文字色 */
+textarea::placeholder, input::placeholder {
+    color: #999999;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+/* スクショの「変換する」ボタンの鮮やかな青 */
+.btn-primary {
+    background-color: #318cd7;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #2276be;
+}
+
+/* スクショの「クリア」ボタンの鮮やかな赤 */
+.btn-danger {
+    background-color: #e04436;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #ca3528;
+}
+
+/* スクショの「コピーする」ボタンの鮮やかな緑 */
+.btn-success {
+    background-color: #20c169;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.btn-success:hover {
+    background-color: #1a9e56;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
 }
