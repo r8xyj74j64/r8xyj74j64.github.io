@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改行削除ツール</title>
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>改行削除ツール</h1>
+        <p>テキストを貼り付けてボタンを押すと、改行を処理します。</p>
+
+        <div class="input-group">
+            <label for="inputText">元の文章:</label>
+            <textarea id="inputText" placeholder="ここに文章を入力または貼り付けてください..."></textarea>
+        </div>
+
+        <!-- 追加：処理モードの選択オプション -->
+        <div class="option-group">
+            <label>処理方法:</label>
+            <div class="radio-options">
+                <label class="radio-label">
+                    <input type="radio" name="replaceOption" value="remove" checked>
+                    完全に削除する
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="replaceOption" value="space">
+                    半角スペースに置換する
+                </label>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="removeBtn" class="primary-btn">変換する</button>
+            <button id="clearBtn" class="secondary-btn">クリア</button>
+        </div>
+
+        <div class="output-group">
+            <label for="outputText">結果:</label>
+            <textarea id="outputText" readonly placeholder="結果がここに表示されます..."></textarea>
+            <button id="copyBtn" class="copy-btn">コピーする</button>
+            <span id="copyMessage" class="hidden">コピーしました！</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
